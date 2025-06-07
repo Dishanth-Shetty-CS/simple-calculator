@@ -1,0 +1,244 @@
+/* Applying CSS for "body" tag like bgcolor,position, height and its margin position */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url('simple-calculator-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Applying CSS for the "form" tag like bgcolor,border-radius,padding,box-shadow,width and its height  */
+form {
+    background: whitesmoke;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 1px 1px 15px black;
+    width: 450px;
+    height: 450px;
+}
+
+/* Applying CSS for "table" tag like its width, height and spaces before the border*/
+table {
+    width: 450px;
+    height: 450px;
+    border-spacing: 10px;
+}
+
+/* Applying CSS for the "display" to change its width,bgcolor,position,text-size and text-transform etc.  */
+#display {
+    width: 406px;
+    cursor: not-allowed;
+    border: none;
+    background-color: #546E7A;
+    color: #FFFFFF;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: right;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+/* Applying CSS to change the first row keys like M+, M-, MR, MC (Memory Functions) its bgcolor,width,height etc. */
+.first_row td input {
+    background: #2C3E50;
+    color: #FFFFFF;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Applying CSS for the memory functions at the time of cursor hover changes its bgcolor and transition (smoothness) */
+.first_row td input:hover {
+    background: #3D566E;
+    transition: 0.6s;
+}
+
+/* Applying CSS for open and close paranthesis present in the 2nd and 3rd row stylings are mentioned here */
+.second_row td #openbrace,
+.third_row td #closebrace {
+    background: #424242;
+    color: #FFFFFF;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Applying CSS for the open/close paranthesis at the time of cursor hover changes its bgcolor and transition (smoothness) */
+.second_row td #openbrace:hover,
+.third_row td #closebrace:hover {
+    background: #545353;
+    transition: 0.6s;
+}
+
+/* Applying CSS for AC,CE present in 3rd and 4th row changes its bgcolor, text-size etc. */
+.fourth_row td #clr,
+.fifth_row td #ac {
+    background: #B71C1C;
+    color: #FFFFFF;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Applying CSS for the AC/CE buttons at the time of cursor hover changes its bgcolor and transition (smoothness) */
+.fourth_row td #clr:hover,
+.fifth_row td #ac:hover {
+    background: #c62828;
+    transition: 0.6s;
+}
+
+/* Applying CSS for all the numbering buttons (0-9 and 00) changes its bgcolor,width and text-sizes etc */
+.second_row td input,
+.third_row td input,
+.fourth_row td input,
+.fifth_row td input {
+    background: #E0E0E0;
+    color: #212121;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid rgb(200, 200, 200);
+    font-size: 25px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Applying CSS for the numbering buttons(0-9 and 00) at the time of cursor hover its bgcolor and transition (smoothness) */
+.second_row td input:hover,
+.third_row td input:hover,
+.fourth_row td input:hover,
+.fifth_row td input:hover {
+    background: #CFCECE;
+    transition: 0.6s;
+}
+
+/* Applying CSS for operators +,-,* and / changes its bgcolor,width,height,text-size etc */
+.first_row td #div,
+.second_row td #times,
+.third_row td #minus,
+.fourth_row td #plus {
+    background: #F48A00;
+    color: #FFFFFF;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 25px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Applying CSS for the operatosrs at the time of cursor hover changes its bgcolor and transition (smoothness) */
+.first_row td #div:hover,
+.second_row td #times:hover,
+.third_row td #minus:hover,
+.fourth_row td #plus:hover {
+    background: #EE9A2C;
+    transition: 0.6s;
+}
+
+/* Applying CSS for the (.) Decimal Point changes its bgcolor,width,height and text-size etc */
+.fifth_row td #DecimalPoint {
+    background: #546E7A;
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 25px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Applying CSS for the Decimal Point (.) at the time of cursor hover changes its bgcolor and transition (smoothness) */
+.fifth_row td #DecimalPoint:hover {
+    background: #607D8B;
+    transition: 0.6s;
+}
+
+/* Applying CSS for the doit(=/solve) button to change its bgcolor,width,height and text-size etc. */
+.fifth_row td #doit {
+    background: #007BFF;
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 25px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Applying CSS for the doit(=/solve) button at the time of cursor hover its bgcolor and transition (smoothness) */
+.fifth_row td #doit:hover {
+    background: #0099FF;
+    transition: 0.6s;
+}
+
+/* Applying CSS for @media queries to make the webpage more responsive and applicable for all the devices */
+@media screen and (max-width: 768px) {
+
+    /* Applying CSS for "form" tag to change its width,height and padding */
+    form {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+    }
+
+    /* Applying CSS for "table" tag to change its width,height and spaces before the border */
+    table {
+        width: 100%;
+        height: auto;
+        border-spacing: 8px;
+    }
+
+    /* Applying CSS for "display" id to change its width,text-size and padding*/
+    #display {
+        width: 98%;
+        font-size: 30px;
+        padding: 8px;
+    }
+
+    /* Applying CSS for all the numbers 0-9 and 00 resize it */
+    .first_row td input,
+    .second_row td input,
+    .third_row td input,
+    .fourth_row td input,
+    .fifth_row td input {
+        height: 45px;
+        font-size: 18px;
+    }
+
+    /* Applying CSS for all the operators(+,-,*,/) 
+    special functions(AC,CE),decimal Point(.),Solve(=), open and close braces()
+    changes its height and text-size */
+    .first_row td #div,
+    .second_row td #times,
+    .third_row td #minus,
+    .fourth_row td #plus,
+    .fourth_row td #clr,
+    .fifth_row td #ac,
+    .fifth_row td #DecimalPoint,
+    .fifth_row td #doit,
+    .second_row td #openbrace,
+    .third_row td #closebrace {
+        height: 45px;
+        font-size: 18px;
+    }
+}

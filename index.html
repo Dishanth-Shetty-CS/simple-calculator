@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Viewport with intial scale is 1.0 means responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- External CSS linking to change the appearance of the webpage -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon means tab icon -->
+    <link rel="shortcut icon" href="calculator.png" type="image/x-icon">
+    <!-- Title of the webpage is declared here-->
+    <title>Simple Calculator with Memory Features – Access Basic Arithmetic Functions Instantly</title>
+</head>
+
+<body>
+    <!-- Simple Calculator form -->
+    <form action="#">
+        <table>
+            <tr>
+                <!-- HTML Structure for Display -->
+                <td colspan="6" rowspan="1">
+                    <input type="text" name="display" id="display" disabled>
+                </td>
+            <tr>
+
+            <!-- Row with Memory functions & divide operation included -->
+            <tr class="first_row">
+                <td id="mem_add"><input type="button" name="mem_add" value="M+" id="mem_add" onclick="MemoryAdd()"></td>
+                <td id="mem_sub"><input type="button" name="mem_sub" value="M-" id="mem_sub" onclick="MemorySub()"></td>
+                <td id="mem_recall"><input type="button" name="mem_recall" value="MR" id="mem_recall" onclick="MemoryRecall()"></td>
+                <td id="mem_clear"><input type="button" name="mem_clear" value="MC" id="mem_clear" onclick="MemoryClear()"></td>
+                <td id="div"><input type="button" name="div" value="&divide;" id="div" onclick="Show('/')"></td>
+            </tr>
+
+            <!-- Row with "(" and 7 8 9 and * included -->
+            <tr class="second_row">
+                <td><input type="button" name="openbrace" value="&#41;" id="openbrace" onclick="Show('&#41;')"></td>
+                <td><input type="button" name="seven" value="7" onclick="Show('7')"></td>
+                <td><input type="button" name="eight" value="8" onclick="Show('8')"></td>
+                <td><input type="button" name="nine" value="9" onclick="Show('9')"></td>
+                <td><input type="button" name="times" value="&times;" id="times" onclick="Show('*')"></td>
+            </tr>
+
+            <!-- Row with ")" 4 5 6 and - included -->
+            <tr class="third_row">
+                <td><input type="button" name="closebrace" value="&#40;" id="closebrace" onclick="Show('&#40;')"></td>
+                <td><input type="button" name="four" value="4" onclick="Show('4')"></td>
+                <td><input type="button" name="five" value="5" onclick="Show('5')"></td>
+                <td><input type="button" name="six" value="6" onclick="Show('6')"></td>
+                <td><input type="button" name="minus" value="-" id="minus" onclick="Show('-')"></td>
+            </tr>
+
+            <!-- Row with CE (Clear Entry) 1 2 3  and + included -->
+            <tr class="fourth_row">
+                <td><input type="button" name="clear" value="CE" id="clr" onclick="Clear()"></td>
+                <td><input type="button" name="one" value="1" onclick="Show('1')"></td>
+                <td><input type="button" name="two" value="2" onclick="Show('2')"></td>
+                <td><input type="button" name="three" value="3" onclick="Show('3')"></td>
+                <td><input type="button" name="plus" value="+" id="plus" onclick="Show('+')"></td>
+            </tr>
+
+            <!-- Row with AC (All Clear) 0 00 . and = included -->
+            <tr class="fifth_row">
+                <td><input type="button" name="ac" value="AC" id="ac" onclick="AllClear()"></td>
+                <td><input type="button" name="zero" value="0" onclick="Show('0')"></td>
+                <td><input type="button" name="double_zero" value="00" onclick="Show('00')"></td>
+                <td><input type="button" name="dot" value="." id="DecimalPoint" onclick="Decimalpoint()"></td>
+                <td><input type="button" name="doit" value="=" id="doit" onclick="Solve()"></td>
+            </tr>
+        </table>
+    </form>
+    <!-- External JavaScript linking to change the behaviour of the webpage -->
+    <script src="scripts.js"></script>
+</body>
+
+</html>
